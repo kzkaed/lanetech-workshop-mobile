@@ -130,9 +130,9 @@ html { box-sizing: border-box; }
 html { font: 300 100%/1.5 "Lato", sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 @media (min-width: 720px) { html { font-size: 120%; } }
 
-body { background: #8d7984; color: #fff; }
+body { background: #d77b0e; color: #fff; }
 
-section { border-bottom: 3px solid #72616a; }
+section { border-bottom: 3px solid #804908; }
 section:last-of-type { border: 0; }
 
 .row { margin-bottom: 2rem; }
@@ -162,12 +162,12 @@ a { color: inherit; text-decoration: underline; }
 
 code { color: #333; background: #fff; border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; font-size: .9rem; padding: .1rem .2rem; }
 
-header { background: #72616a; color: #fff; text-align: left; }
+header { background: #a8610b; color: #fff; text-align: left; }
 
 header .container { padding: 2rem 0; }
 
 .example-box { background: #fff; border-radius: 3px; overflow: hidden; padding: 1.1rem; position: relative; }
-.example-box-drk { background: #353f44; border-radius: 3px; overflow: hidden; padding: 1.1rem; position: relative; }
+.example-box-drk { background: #783113; border-radius: 3px; overflow: hidden; padding: 1.1rem; position: relative; }
 
 .clean-code-tip { color: #f6e164; }
 
@@ -190,3 +190,9 @@ header .container { padding: 2rem 0; }
 .row, .container { *zoom: 1; }
 .row:before, .container:before, .row:after, .container:after { content: " "; display: table; }
 .row:after, .container:after { clear: both; }
+
+.resources {
+  p {
+      margin: .125em;
+  }
+}

@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="workshop.css" type="text/css">
+    <link rel="stylesheet" href="workshop-mobile.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700|Roboto:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
@@ -13,121 +13,77 @@
     <header>
       <div class="container">
         <h2>Women in CS Workshop at <a href="http://www.lanetech.org/">Lane Tech </a></h2>
-        <h1>Mobile Storyboarding- Intro to Creating a Mobile App</h1>
+        <h1>Mobile Storyboarding- Intro to Creating a Mobile App with xcode</h1>
         <h2>(and a few principles of clean code and software quality)</h2>
 
         <ol>
           <li>Expressive names for variables, functions, or classes</li>
           <li>Short functions that do one thing and one thing only</li>
-          <li>Reduce duplication by looking for patterns</li>
+          <li>Reduce duplication by looking for patterns and refactoring</li>
           <li>Write tests and refactor often</li>
         </ol>
-        <div class="row"><p>Today we will use <a href="https://codepen.io/signup/free">https://codepen.io/signup/free</a> to code up our HTML, CSS and JavaScript.</p><p> If we have time we will also explore writing a test for JavaScript with <a href="http://cyber-dojo.org/">http://cyber-dojo.org/</a> </p></div>
+        <div class="row">
+          <p>Today we will jump into xcode and begine our storyboard there</p>
+          <p>We will build a view and if time permits, a controller</p>
+          <p>We will explore components of xcode, including how to build and use the emulator</p></div>
       </div>
     </header>
 
-    <section id="html">
+    <section id="Swift Basics">
       <div class="container">
-        <h3>HTML : Hyper Text Markup Protocol</h3>
+        <h3>Swift and Objective C</h3>
+        Historically, development for IOS happened in Objective C. It has transitioned to Swift,
+        and while xcode still supports both,
+        we will only be working in Swift.
+        All new development in xcode should be in Swift.
         <div class="row">
-          <h4>1 : HTML</h4>
-          <p> HTML is a markup language for describing web documents (web pages). HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.</p>
+          <h4>1</h4>
+          <p>one </p>
         </div>
         <div class="row">
-          <h4>2: DOM </h4>
-          The Document Object Model is a programming interface for HTML, XML and SVG documents. It provides a structured representation of the document (a tree) and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.
-        </div>
-        <div class="row">
-          <h4>3: tag </h4><p>
-          The tag is label wraps the content for the page.
+          <h4>2 </h4>
           <p>
-          <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> are tags.
+            two
+          <p>
+        </div>
+        <div class="row">
+          <h4>3 </h4>
+          <p>
+          three
+          <p>
+          <code>some code</code>
           </p>
-          <p>
-          <code>&lt;div&gt;</code> and <code>&lt;/div&gt;</code> are tags.</p>
+
         </div>
-        <div class="row">
-          <h4>4: attribute </h4>
-          Attributes are added to tags to describe more details about the element. <p>
-          <code>&lt;div class="circle"&gt;</code></p> class="circle" is an attribute of the div tag.
-        </div>
-        <div class="row">
-          <h4>5: element </h4>
-          <code>&lt;div class="circle"&gt;Hi, I am a circle!&lt;/div&gt;</code> is an element. An element is the tag, attribute and the content inside the tags. An element is a node in the DOM. What is contained between the tags is what is displayed when the HTML is parsed by our browser. It is what is seen on the webpage.
-        </div>
+
         <div class="row">
           <div class="column">
-            <h4>html, head and body tags</h4>
-            <p>A base HTML DOM has these core tags. &mdash;&gt;</p>
-            <p>Notice the 'Tree' structure, where the head tag and body tag are contained inside the top level html tag. As you add more tags to the document, the structure becomes more nested, like branches of a tree. As a tree trunk moves up, branches extend from the trunk and branches from the branches before. </p>
-            <p>These are also called nodes. The parent node is the html tag. The child nodes are the head and body tags.</p>
+            <h4>Stuff</h4>
+            <p>info</p>
           </div>
           <div class="column">
-            <code data-gist-id="91a54b9bf17cd5fd4c49"></code>
+            <code data-gist-id=""></code>
           </div>
         </div>
 
         <div class="row">
-          <p class="note">note: <a href="http://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags">http://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags</a></p>
-        </div>
-
-        <div class="row">
-          <h4>What goes in the head tag</h4>
-          <p>The head tage contains metadata - information about the data contained in the html document. It is not seen when looking at the web page, but it may link the page to other files that control the look, feel and logic of the page. </p>
-          <p>In this example, the html document is
+          <h4>title</h4>
+          <p>stuff
           <ul>
-            <li>linked to a 'stylesheet' file called 'workshop.css' of type 'text/css'.</li>
-            <li>and the javascript file (src) 'workshop.js' of type 'text/javscript' is included with the document. </li>
-            <li>async in the script element has to do with how/when the javascript file is parsed. See note below.</li>
+            <li>this</li>
+            <li>that</li>
           </ul>
           </p>
-          <p>The script element allows for javascript code to be contained inside the script element. However, it is generally preferable for it to be in a separate file. <span class="clean-code-tip">A clear separation of logic from markup keeps code clean.</span></p>
+          <p>other <span class="clean-code-tip">tip</span></p>
         </div>
 
-        <div class="row">
-          <code data-gist-id="25f5d1d5a3d0c67a5283"></code>
-        </div>
-
-        <div class="row">
-          <p class="note">note:
-          <a href="http://stackoverflow.com/questions/436411/where-is-the-best-place-to-put-script-tags-in-html-markup">http://stackoverflow.com/questions/436411/where-is-the-best-place-to-put-script-tags-in-html-markup</a>
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <h4>What goes in the body tag</h4>
-            <p>All sorts of fun stuff. Today we will look at div, p, h1, and ul li combination and a. Let's open codepen.io and play!</p>
-          </div>
-
-          <div class="column">
-            <code data-gist-id="b114b67bd872db192e5f"></code>
-          </div>
-        </div>
-
-        <div class="row">
-          <p><a href="shapes.html">shape excersize html</a></p>
-          elements/tags we will look at:
-          <code data-gist-id="f1b96e440307e01b1675"></code>
-        </div>
       </div>
     </section>
 
-    <section id="css">
+    <section id="swift">
       <div class="container">
-        <h3>Cascading Style Sheets</h3>
-        <p>
-        <a href="shapes.css">shape excersize css</a>
-        We will look at:
-        <code data-gist-id="99532e80ff2b399dd050"></code>
-        </p>
-      </div>
-    </section>
-
-    <section id="javascript">
-      <div class="container">
-        <h3>JavaScript</h3>
-        <p>Javascript can be client-side or server-side. We are going to play with client-side javascript. For websites, javascript can be used to manipulate the HTML DOM. A few language basics to get you started.</p>
+        <h3>Swift</h3>
+        <p>Desc</p>
         <article id="variable" class="row">
           <div class="column">
             <h4>variable</h4>
@@ -136,8 +92,8 @@
             <p>Variable 'words' is an array of strings.</p>
           </div>
           <div class="column">
-            <h5>javascript</h5>
-            <code data-gist-id="39c10175bef50aec1060"></code>
+            <h5>swift</h5>
+            <code data-gist-id=""></code>
           </div></article>
 
 
@@ -146,39 +102,25 @@
             <h4>function</h4>
 
             <div class="row">
-              <code data-gist-id="e14484d2b45c0f6673a9"></code>
+              <code data-gist-id=""></code>
             </div>
           </article>
 
-          <article id="document" class="row">
 
-            <h4>Accessing the elements in the html document</h4>
-            <p></p>
-
-            <div class="row">
-              <code data-gist-id="873fd2c9812bde0bd07a"></code>
-            </div>
-          </article>
-
-          <article id="js-debugging" class="row">
+          <article id="debugging" class="row">
 
             <h4>simple debugging</h4>
             <p></p>
 
             <div class="row">
-              <code data-gist-id="d602108b5f2cc330a19d"></code>
+              <code data-gist-id=""></code>
             </div>
             <div class="row">
-              <code data-gist-id="a7cab5a003b5ab54e4a2"></code>
+              <code data-gist-id=""></code>
             </div>
           </article>
 
-          <div class="row">
-            <p>Building a menu bar and its interactions. A menu bar is a design pattern that can be used over and over</p>
-            <p><a href="shapes.js">shape excersize js</a></p>
-            We will look at:
-            <code id="look-at-js" data-gist-id="15553e5d7445f6fa11a0"></code>
-          </div>
+
       </div>
     </section>
 
@@ -241,18 +183,11 @@
 
     </section>
 
-    <section id="processing-js">
+    <section id="git repo">
       <div class="container">
-        <article id="processing-form in code" class="row">
+        <article id="swift code" class="row">
           <div class="row">
-            <p>An other way to become familiar with patterns, a process or mehtod of implementation that is repeatable, is to play with algorithms that output form. Form and code.</p>
-            <p> For that you can play with processing js using the  <a href="http://p5js.org/reference/#/p5/getURL">p5 library</a>.
-            </p>
-            <p><a href="http://kzkaed.github.io/LaneTechWorkshop/sketch.html">sketch html</a></p>
-            <p><a href="http://kzkaed.github.io/LaneTechWorkshop/sketch.css">sketch css</a></p>
-            <p><a href="http://kzkaed.github.io/LaneTechWorkshop/sketch.js">sketch js</a></p>
-
-
+             <p><a href="https://github.com/kzkaed/about-anything">git@github.com:kzkaed/about-anything.git</a></p>
           </div>
 
         </article>
@@ -261,30 +196,23 @@
 
 
     <section id="resources">
-      <div class="container">
+      <div class="container resources">
 
         <h3>Resources</h3>
-        <ul>
-          <li><a href="http://www.8thlight.com/">8thlight.com</a></li>
-          <li><a href="http://www.colorhexa.com/">http://www.colorhexa.com/</a></li>
-          <li><a href="https://www.google.com/fonts">https://www.google.com/fonts</a></li>
-          <li>
-            <a href="codepen.io">codepen.io</a>
-          </li>
-          <li>Developer Inspector Tool in the browsers like Chrome and Mozilla</li>
-          <li><a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document">https://developer.mozilla.org/en-US/docs/Web/API/Document</a></li>
-          <li><a href="http://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags">http://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags</a></li>
-          <li><a href="http://www.w3schools.com/colors/colors_picker.asp">http://www.w3schools.com/colors/colors_picker.asp</a></i>
-          <li><a href="http://www.w3schools.com/colors/colors_hex.asp">http://www.w3schools.com/colors/colors_hex.asp</a></i>
-          <li><a href="http://www.w3schools.com/colors/colors_crayola.asp">http://www.w3schools.com/colors/colors_crayola.asp</a></i>
-        </ul>
+
 
         <p><a href="http://ltacademiccenter.blogspot.com/2016/01/women-in-computer-science-conference.html">Lane Tech Blog</a></p>
-        <p><a href="http://scutigera.com/">About Me, Kristin Kaeding</a></p>
-        <p><a href="http://www.lisahamm.com">About Lisa Hamm</a></p>
-        <p><a href="http://ericagarcia.me">About Erica Garcia</a></p>
-        <p><a href="http://calvached.github.io/">About Diana Calvache</a></p>
+
+        <h3>About Us</h3>
+        <p><a href="http://scutigera.com/">Kristin Kaeding</a></p>
+        <p><a href="http://site.com/">Anda Cabrera</a></p>
+        <p><a href="http://ericagarcia.me">Erica Garcia</a></p>
+        <p><a href="http://calvached.github.io/">Diana Calvache</a></p>
+        <p><a href="http://site.com/">Elizabeth Engleman</a></p>
+        <p><a href="http://site.com/">Hana Lee</a></p>
+        <p><a href="http://site.com/">Becca Nelson</a></p>
+        <p>&nbsp;</p>
+        <p><a href="http://www.8thlight.com/">8thlight.com</a></p>
       </div>
     </section>
   </body>
