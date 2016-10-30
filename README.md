@@ -80,13 +80,15 @@ hardware home etc.
 controller and view on page at same time
 
 
-https://en.wikipedia.org/wiki/Barbara_Liskov
+https://en.wikipedia.org/wiki/Katherine_Johnson
 
 https://en.wikipedia.org/wiki/Grace_Hopper
 
 https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)
 
-https://en.wikipedia.org/wiki/Katherine_Johnson
+https://en.wikipedia.org/wiki/Barbara_Liskov
+
+https://en.wikipedia.org/wiki/Ellen_Ochoa
 
 https://en.wikipedia.org/wiki/Latanya_Sweeney
 
