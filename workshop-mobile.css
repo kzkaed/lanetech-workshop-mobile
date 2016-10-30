@@ -191,10 +191,8 @@ header .container { padding: 2rem 0; }
 .row:before, .container:before, .row:after, .container:after { content: " "; display: table; }
 .row:after, .container:after { clear: both; }
 
-.resources {
-  p {
-      margin: .125em;
-  }
+p.resource {
+    line-height: .5em;
 }
 
 img.thumbs {
