@@ -1,0 +1,16 @@
+var currentImagePosition = 0
+
+let images = ["Katherine_Johnson.jpg",
+              "Margaret_Hamilton.jpg",
+              "Grace_Hopper.jpg",
+              "Barbara_Liskov.jpg",
+              "Ellen_Ochoa.jpg",
+              "Latanya_Sweeney.jpg"]
+
+func getNextImage() -> String {
+    currentImagePosition = self.currentImagePosition + 1
+    if (currentImagePosition == images.count - 1) {
+        self.currentImagePosition = 0
+    }
+    return images[currentImagePosition]
+}
