@@ -1,3 +1,31 @@
+    let profileNames: [String:String] =
+        ["Katherine_Johnson": "Katherine Johnson",
+         "Margaret_Hamilton": "Margaret Hamilton",
+         "Grace_Hopper": "Grace Hopper",
+         "Latanya_Sweeney": "Latanya Sweeney",
+         "Barbara_Liskov": "Barbara Liskov",
+         "Ellen_Ochoa": "Ellen Ochoa"]
+
+    let profileUrls: [String:String] =
+        ["Katherine_Johnson": "https://en.wikipedia.org/wiki/Katherine_Johnson",
+         "Margaret_Hamilton": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)",
+         "Grace_Hopper": "https://en.wikipedia.org/wiki/Grace_Hopper",
+         "Latanya_Sweeney": "https://en.wikipedia.org/wiki/Latanya_Sweeney",
+         "Barbara_Liskov": "https://en.wikipedia.org/wiki/Barbara_Liskov",
+         "Ellen_Ochoa": "https://en.wikipedia.org/wiki/Ellen_Ochoa"]
+
+    let profiles = ["Katherine_Johnson",
+                    "Margaret_Hamilton",
+                    "Grace_Hopper",
+                    "Latanya_Sweeney",
+                    "Barbara_Liskov",
+                    "Ellen_Ochoa"]
+
+
+
+#other data structures
+
+
 let images: [UIImage] =
     [#imageLiteral(resourceName: "Margaret_Hamilton"),
      #imageLiteral(resourceName: "Grace_Hopper"),
@@ -25,11 +53,10 @@ let urls: [String] =
 
 
 
- let profilesDictionary: [String: Array<Any>] =
-         ["Margarat Hamilton":
-             [#imageLiteral(resourceName: "Margaret_Hamilton"),"https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)"],
+ let profilesDictionary: [String: Array<String>] =
+         ["Margarat_Hamilton":["Margaret_Hamilton","https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)"],
          "Grace Hopper":
-             [#imageLiteral(resourceName: "Grace_Hopper"),"https://en.wikipedia.org/wiki/Grace_Hopper"],
+             ["Grace_Hopper","https://en.wikipedia.org/wiki/Grace_Hopper"],
          "Katherine Johnson":
              [#imageLiteral(resourceName: "Katherine_Johnson"), "https://en.wikipedia.org/wiki/Katherine_Johnson"],
          "Latanya Sweeny":
@@ -40,12 +67,4 @@ let urls: [String] =
              [#imageLiteral(resourceName: "Ellen_Ochoa.jpg"), "https://en.wikipedia.org/wiki/Ellen_Ochoa"]]
 
 
-
-let profiles =
-     [["Margarat Hamilton", "Margaret_Hamilton.jpg", "https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)"],
-      ["Grace Hopper", "Grace_Hopper.jpg","https://en.wikipedia.org/wiki/Grace_Hopper"],
-      ["Katherine Johnson", "Katherine_Johnson.jpg", "https://en.wikipedia.org/wiki/Katherine_Johnson"],
-      ["Latanya Sweeny","Latanya_Sweeney.jpg", "https://en.wikipedia.org/wiki/Latanya_Sweeney"],
-      ["Barbara Liskov","Barbara_Liskov.jpg", "https://en.wikipedia.org/wiki/Barbara_Liskov"],
-      ["Ellen Ochoa", "Ellen_Ochoa.jpg", "https://en.wikipedia.org/wiki/Ellen_Ochoa"]]
 
